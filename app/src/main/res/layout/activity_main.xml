@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/custom_button5"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center_horizontal"
+        android:text="@string/mudra1"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#363636"
+        android:textSize="90sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"
+                android:gravity="center_horizontal"
+                android:text="@string/dictionary"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#3FEE00"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/dictionary"
+                android:layout_width="200sp"
+                android:layout_height="wrap_content"
+                android:background="@color/material_on_surface_stroke"
+                android:text="@string/book"
+                android:textAllCaps="false"
+                android:textSize="50sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:text="@string/alphabet_detection"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#3FEE00"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/camera_button"
+                android:layout_width="110sp"
+                android:layout_height="50sp"
+                android:background="@drawable/custom_button"
+                android:text="@string/real_time"
+                android:textStyle="bold"
+                android:textAllCaps="false" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:text="@string/language_detection"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#3FEE00"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/english"
+                android:layout_width="200sp"
+                android:layout_height="50sp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/custom_button2"
+                android:text="@string/english"
+                android:textStyle="bold"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/hindi"
+                android:layout_width="200sp"
+                android:layout_height="50sp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/custom_button3"
+                android:text="@string/HINDI"
+                android:textStyle="bold"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/kannada"
+                android:layout_width="200sp"
+                android:layout_height="50sp"
+                android:layout_marginBottom="100dp"
+                android:background="@drawable/custom_button4"
+                android:text="@string/KANNADA"
+                android:textStyle="bold"
+                android:textAllCaps="false" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

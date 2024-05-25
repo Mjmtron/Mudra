@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".dictionary">
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:background="@drawable/custom_button5"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center_horizontal"
+        android:text="@string/mudra1"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#363636"
+        android:textSize="90sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90sp"
+        android:gravity="center_horizontal"
+        android:text="@string/dictionary"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#3FEE00"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/textView3"
+        tools:ignore="MissingConstraints,NotSibling"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="389dp"
+        android:layout_height="266dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toTopOf="@+id/nestedScrollView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="375dp"
+                android:fadingEdge="horizontal|vertical"
+                app:srcCompat="@drawable/dictionary" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="268dp"
+        android:layout_height="350dp"
+        android:layout_marginTop="400dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#C9000000"
+            android:fadeScrollbars="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/a25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:outlineProvider="background"
+                android:text="@string/a_how_are_you_n_n"
+                android:textColor="#3FEE00"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/a24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:outlineProvider="background"
+                android:text="@string/b_bad_n_n"
+                android:textColor="#3FEE00"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/a23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:outlineProvider="background"
+                android:text="@string/c_come_here_n_n"
+                android:textColor="#3FEE00"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/a22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:outlineProvider="background"
+                android:text="@string/d_dance_n_n"
+                android:textColor="#3FEE00"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/a21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:outlineProvider="background"
+                android:text="@string/e_eat_n_n"
+                android:textColor="#3FEE00"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/a20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:outlineProvider="background"
+                android:text="@string/f_food_n_n"
+                android:textColor="#3FEE00"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/a19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:outlineProvider="background"
+                android:text="@string/g_good_go_n_n"
+                android:textColor="#3FEE00"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/a18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:outlineProvider="background"
+                android:text="@string/h_hello_n_n"
+                android:textColor="#3FEE00"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/a17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:outlineProvider="background"
+                android:text="@string/i_i_m_fine_i_n_n"
+                android:textColor="#3FEE00"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/a16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:outlineProvider="background"
+                android:text="@string/j_justice_n_n"
+                android:textColor="#3FEE00"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/a15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:outlineProvider="background"
+                android:text="@string/k_congratulations_n_n"
+                android:textColor="#3FEE00"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/a14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:outlineProvider="background"
+                android:text="@string/l_live_n"
+                android:textColor="#3FEE00"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/a13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:outlineProvider="background"
+                android:text="@string/m_my_n_n"
+                android:textColor="#3FEE00"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/a12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:outlineProvider="background"
+                android:text="@string/n_no_need_n_n"
+                android:textColor="#3FEE00"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/a11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:outlineProvider="background"
+                android:text="@string/o_ok_done_n_n"
+                android:textColor="#3FEE00"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/a10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:outlineProvider="background"
+                android:text="@string/p_please_n_n"
+                android:textColor="#3FEE00"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/a9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:outlineProvider="background"
+                android:text="@string/q_question_answer_n_n"
+                android:textColor="#3FEE00"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/a8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:outlineProvider="background"
+                android:text="@string/r_repeat_rotate_n_n"
+                android:textColor="#3FEE00"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/a7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:outlineProvider="background"
+                android:text="@string/s_sorry_n_n"
+                android:textColor="#3FEE00"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/a6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:outlineProvider="background"
+                android:text="@string/t_thankyou_n_n"
+                android:textColor="#3FEE00"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/a5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:outlineProvider="background"
+                android:text="@string/u_understand_n_n"
+                android:textColor="#3FEE00"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:outlineProvider="background"
+                android:text="@string/v_value_price_rate_n_n"
+                android:textColor="#3FEE00"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/a2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:outlineProvider="background"
+                android:text="@string/w_what_when_where_why_n_n"
+                android:textColor="#3FEE00"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/a4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:outlineProvider="background"
+                android:text="@string/x_time_n_n"
+                android:textColor="#3FEE00"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/a26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:outlineProvider="background"
+                android:text="@string/y_you_your_n_n"
+                android:textColor="#3FEE00"
+                android:textSize="30sp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
